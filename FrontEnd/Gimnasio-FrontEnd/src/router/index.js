@@ -7,6 +7,7 @@ import Persona from '@/components/Persona.vue'
 import Base from '@/components/Base.vue'
 import Membresia from '@/components/Membresia.vue'
 import Miembro from '@/components/Miembro.vue'
+import PiedePagina from '@/components/PiedePagina.vue'
 
 
 const router = createRouter({
@@ -33,6 +34,11 @@ const router = createRouter({
         {path:'/membresia', name: 'membresia', component:Membresia},
         {path:'/miembro', name: 'miembro', component:Miembro}
       ]
+    },
+    {
+      path: '/piedePagina',
+      name: '/piedePagina',  
+      component: PiedePagina,
     }
   ]
 })

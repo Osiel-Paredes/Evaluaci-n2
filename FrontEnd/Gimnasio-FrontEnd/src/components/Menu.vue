@@ -309,9 +309,37 @@
            </ul>
        </div>
    </aside>
-   
+    
 
+   <div id="app">
    <div class="p-4 sm:ml-64 m-8">
        <router-view />
    </div>
+
+   <div class="footer">
+       <PiedePagina/>
+   </div>
+</div>
+
 </template>
+
+<script>
+import PiedePagina from './PiedePagina.vue'
+export default {
+    components: {
+        PiedePagina
+    }
+}
+</script>
+
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   padding: 15px;
+}
+</style>
